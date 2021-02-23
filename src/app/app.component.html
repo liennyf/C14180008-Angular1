@@ -2,3 +2,13 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+
+  <div *ngFor = "let i of [0,1,2,3,4] ;">
+      <span *ngFor = "let j of arr[i] ;">
+        {{j}}
+      </span>
+  </div>
+
+<p>Now Playing: User {{user}}</p>
+<input (keyup)="onKey($event)"/><p>
+<p *ngIf = "tampil">USER {{userwin}}  WIN!</p>
